@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Create Projects</title>
-</head>
-<body>
+@extends('layout')
+
+@section('content')
   <h1>Create Page</h1>
   <form method="POST" action="/projects">
     {{ csrf_field() }}
@@ -18,5 +14,4 @@
       <button type="submit">Create Project</button>
     </div>
   </form>
-</body>
-</html>
+@endsection
